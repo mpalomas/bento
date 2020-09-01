@@ -20,10 +20,10 @@
           {{if or (eq (substr .Site.Params.avatar 0 7) "http://") (eq (substr .Site.Params.avatar 0 8) "https://")}}
             <img alt="{{ .Site.Title }}" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-3" src="{{.Site.Params.avatar}}">
           {{ else }}
-            <img alt="{{ .Site.Title }}" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-3" src="{{.Site.Params.avatar | absURL}}">
+            <img alt="{{ .Site.Title }}" class="w-24 h-24 lg:w-32 lg:h-32 mb-3" src="{{.Site.Params.avatar | absURL}}">
           {{ end }}
         {{ end }}
-        <a href="{{ .Site.Home.Permalink }}" class="text-4xl font-normal flex flex-shrink-0 text-center text-white focus:text-gray-300 opacity-75 hover:opacity-100 transition duration-300 ease-in-out">
+        <a href="{{ .Site.Home.Permalink }}" class="text-6xl font-normal flex flex-shrink-0 text-center text-white focus:text-gray-300 opacity-75 hover:opacity-100 transition duration-300 ease-in-out">
           {{ .Site.Title }}
         </a>
 
